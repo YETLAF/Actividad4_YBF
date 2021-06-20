@@ -1,0 +1,88 @@
+import Foundation
+
+//condicionales y ciclos
+var datos = [3,6,9,2,4,1] //datos con los valores [3,6,9,2,4,1]
+
+for dato in datos where dato < 5 { //la variable dato guarda los valores menores a 5
+    print("Números menores a 5: \(dato)")
+}
+//Funciones
+func Suma(val1;Int, val2;Int) Int{
+    return val1 + val2
+    }
+
+//Potencia
+public struct Potencia
+{
+    // Número que queremos elevar
+    private var value: Int
+    // Potencia a la que vamos a elevar el número
+    private var power: Int
+
+    public var resultado: Int
+    {
+        get
+        {
+            Int(pow(Double(self.value), Double(self.power)))
+        }
+        
+        set
+        {
+            self.value = newValue
+        }
+    }
+
+    // Potencia
+    public init(_ power: Int)
+    {
+        self.power = power
+        self.value = 0
+    }
+
+    // elevamos
+
+    public init(resultado: Int, _ power: Int)
+    {
+        self.power = power
+        self.value = resultado
+    }
+}
+
+//Enumeraciones
+var meses 
+
+if numeroMes
+switch numeroMes {
+print ("Primer mes")
+} else {
+print ("Segundo mes")
+}
+
+var n = 12
+switch n {
+case 1:
+    print("Elegiste Enero")
+case 2:
+    print("Elegiste Febrero")
+case 3:
+    print("Elegiste Marzo")
+case 4:
+    print("Elegiste Abril")
+case 5:
+    print("Elegiste Mayo")
+case 6:
+    print("Elegiste Junio")
+case 7:
+    print("Elegiste Julio")
+case 8:
+    print("Elegiste Agosto")
+case 9:
+    print("Elegiste Septiembre")
+case 10:
+    print("Elegiste Octubre")
+case 11:
+    print("Elegiste Noviembre")
+case 12:
+    print("Elegiste Diciembre")
+}
+
